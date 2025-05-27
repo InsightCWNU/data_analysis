@@ -38,3 +38,14 @@ conda init zsh
 
 # 터미널 다시 시작 
 exec zsh
+
+
+# env 설정 파일 관리
+1. pip install python-dotenv
+2. from dotenv import load_dotenv
+    load_dotenv() 호출
+3. .env 파일 생성 후 
+    SECRET_KEY='비밀 키'
+
+4. SECRET_KEY = os.getenv("SECRET_KEY") 변수 할당
+    print(SECRET_KEY)
